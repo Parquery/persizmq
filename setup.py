@@ -37,4 +37,5 @@ setup(
         'dev': ['mypy==0.600', 'pylint==1.8.4', 'yapf==0.20.2', 'tox>=3.0.0'],
         'test': ['tox>=3.0.0']
     },
-    py_modules=['persizmq'])
+    py_modules=['persizmq'],
+    package_data={"persizmq": ["py.typed"]})

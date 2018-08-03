@@ -226,8 +226,8 @@ class PersistentStorage:
                     self.__first = msg
 
             finally:
-                if tmp_pth is not None and tmp_pth.exists():
-                    tmp_pth.unlink()
+                if tmp_pth is not None and tmp_pth.exists():  # type: ignore
+                    tmp_pth.unlink()  # type: ignore
 
 
 class PersistentLatestStorage:
